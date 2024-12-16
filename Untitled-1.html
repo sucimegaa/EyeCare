@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>EyeCare</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="firstScreen" class="screen">
+            <h1 id="title">EYECARE</h1>
+            <img src="images/gambar-mata.jpg" alt="Ikon Mata" id="eyeIcon">
+            <input type="text" id="nameInput" placeholder="Masukkan Nama Anda">
+            <button id="enterButton">Masuk</button>
+            <p id="notification" class="hidden">Silakan masukkan nama Anda</p>
+        </div>
+        
+        <div id="secondScreen" class="screen hidden">
+            <h2>Melakukan Diagnosis Berdasarkan Gejala</h2>
+            <button id="diagnosisButton">Klik Diagnosis</button>
+        </div>
+        
+        <div id="questionScreen" class="screen hidden">
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <div id="questionContainer"></div>
+            <button id="yesButton">Ya</button>
+            <button id="maybeButton">Mungkin</button>
+            <button id="notSureButton">Tidak Tahu</button>
+            <button id="unlikelyButton">Mungkin Tidak</button>
+            <button id="noButton">Tidak</button>
+        </div>
+        
+        <div id="resultScreen" class="screen hidden">
+            <h2>Hasil Diagnosis</h2>
+            <div id="result"></div>
+            <button id="restartButton">Mulai Lagi</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
